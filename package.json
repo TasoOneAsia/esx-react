@@ -1,7 +1,6 @@
 {
   "name": "fivem-boilerplate",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
@@ -15,8 +14,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build:dev": "yarn format && yarn lint && webpack --config ./webpack/dev.config.js --color --progress --no-stats-cached-modules",
-    "build:prod": "format && lint && webpack --config ./webpack/prod.config.js --color --analyze --progress --no-stats-orphan-modules",
+    "build:dev": "npm run format && npm run lint && webpack --config ./webpack/dev.config.js --color --progress --no-stats-cached-modules",
+    "build:prod": "npm run format && npm run lint && webpack --config ./webpack/prod.config.js --color --analyze --progress --no-stats-orphan-modules",
     "format": "prettier --write src/**/*.ts{,x}",
     "lint": "eslint src/**/*.ts{,x}"
   },
